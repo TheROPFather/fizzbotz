@@ -86,7 +86,7 @@ class Images(commands.Cog):
 
         await _send_embed(ctx, "Imgur", image_url)
 
-    @commands.cooldown(1, 3, type=commands.BucketType.member)
+    @commands.cooldown(1, 1, type=commands.BucketType.member)
     @commands.command(aliases=["ib", "IB"])
     async def inspirobot(self, ctx: commands.Context) -> None:
         "Get a random image from InspiroBot."
